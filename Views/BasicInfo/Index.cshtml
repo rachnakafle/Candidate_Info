@@ -1,0 +1,28 @@
+﻿@model BasicInfo
+
+@{
+    ViewData["Title"] = "प्रदेश सभा सदस्य निर्वाचन तर्फको उम्मेदवारीको विवरण";
+}
+
+<header class="mb-5">
+    <h1 class="mt-5">@ViewData["Title"] </h1>
+</header>
+
+<form asp-action="Index">
+    <div class="row mb-3">
+        <div class="col-lg-4">
+            <div class="form-group">
+                <label asp-for="Pradesh" class="control-label"></label>
+                <input asp-for="Pradesh" class="form-control" />
+                <span asp-validation-for="Pradesh" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="form-group">
+                <label asp-for="District" class="control-label"></label>
+                <input asp-for="District" class="form-control" />
+                <span asp-validation-for="District" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+</form>
